@@ -1,0 +1,8 @@
+
+
+monitoring-byfly : Jan 19 15:49:49 : tester : user NOT in sudoers ; TTY=pts/2 ; PWD=/var/www/byflytesting ; USER=root ; COMMAND=/sbin/ifconfig
+
+
+
+monitoring-byfly : Apr 10 11:07:34 : tester : user NOT in sudoers ; TTY=pts/0 ; PWD=/var/www/byflytesting ; USER=root ; COMMAND=/bin/rm sample-json.json
+

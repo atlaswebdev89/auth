@@ -1,0 +1,459 @@
+@charset "utf-8";
+
+* {
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}    
+
+
+
+body {
+    background: #fff url('../img/00bd.png');
+    width: 1200px;
+    height: 100%;
+    min-height: 100px;
+    color: #333;
+    background-attachment: fixed; 
+    margin:   0 auto;
+    font-size: 1em;
+    font-family: "Seqoe UI", sans-serif;
+    line-height: 135%;
+}
+
+#name {
+    font-family: Comic Sans MS, sans-serif;
+    margin-bottom:20px;
+}
+span {
+    font-family: Comic Sans MS, sans-serif;
+}
+
+header, footer {
+    width: 98%;
+    background-color: #6A9BC1; 
+    text-align: center;
+
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5); 
+    
+}
+
+/* Стиль для header */
+
+header {
+    border-bottom: 2px solid silver;
+    padding: 1%;
+}
+
+header a {
+     color:#E6F3FB;
+}
+
+#error{
+	test-align:left;
+}
+#logo {
+    font-size: 1.3em;
+    font-family: Comic Sans MS, sans-serif;
+    color:#E6F3FB;
+
+}
+
+/* стиль для навигации */
+
+#menu{
+	width:100%;
+	float: left;
+        height:60px;
+        background:url(../img/menu_034_bg.jpg) repeat-x;
+    }
+        #menu ul{
+            clear:left;
+            float: left;
+            position: relative;
+            left: 50%;
+            text-align: center;
+            list-style:none;
+            margin:0 auto;
+           
+        }
+            #menu ul li{
+            position: relative;
+   
+             right: 50%;
+                list-style:none;
+                display:block;
+                float:left;
+                height:59px;
+                line-height:59px;
+            }
+                #menu li a{
+                    display:block;
+                    float:left;
+                    text-transform:uppercase;
+                    font-size:12px;
+                    font-weight:bold;
+                    line-height:59px;
+                    text-decoration:none;
+                    padding:0 20px;             
+                }
+                    #menu li a:hover{
+                        color:#fff;
+                        background:url(../img/menu_034_h.jpg) no-repeat bottom;
+                    }
+                    #menu li a.current{
+                    display:block;
+                    float:left;
+                    background:url(../img/menu_034_h.jpg) no-repeat bottom;
+                    color:#fff;
+                    text-transform:uppercase;
+                    font-size:11px;
+                    font-weight:bold;
+                    line-height:59px;
+                    text-decoration:none;
+                    padding:0 20px; 
+                }
+.active{
+      color:#fff;
+}
+
+.menu-fixed {
+	z-index:5;
+	position:fixed;
+	top: 0;
+	left:0;
+	bottom:100px;
+}
+
+/*back кнопка */
+.scrollup{
+	width:40px;
+	height:40px;
+	position:fixed;
+	opacity:0.3;
+	bottom:50px;
+	right:100px;
+	display:none;
+	text-indent:-9999px;
+	background: url('../img/icon_top.png') no-repeat;
+}
+
+
+/* Поиск */
+    
+#search {
+    width: 99%;
+    border-bottom: 2px solid silver;
+    padding: 0.5%;
+    background-image: url(../img/copy.jpg);
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);  
+    color:#E6F3FB;
+    float: left;
+    min-height: 100px;
+}
+
+
+#logoimg {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 150px;
+    float: left;
+    background-image: url(../img/copy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+input {
+    border-radius: 5px;
+    border: 2px solid silver;
+    padding: 5px;
+    
+}
+
+input:focus { border: 2px solid #6A9BC1; }
+/* Боковое меню левое */
+
+#sidebar {
+    width: 15%;
+    display: block;
+    float: left;
+    margin-top: 2%;
+    
+    
+   
+}
+/* 404 страница */
+#error {
+        position: relative;
+	background:url('../img/404.jpg') top right no-repeat;
+	width:100%;
+	height:350px;
+	bottom:10%;
+	left:0px;
+}
+#error a {
+	display:inline-block;
+	text-decoration:none;
+	font-size:14px;
+	color:#2225e4;
+}
+#error a:hover {
+	color:#d02c2a;
+}
+
+/*стили для таблицы */
+
+ table a:link { color: #666;font-weight: bold;text-decoration:none;} 
+ table a:visited {color: #999999;font-weight:bold;text-decoration:none;} 
+ table a:active,table a:hover { color: #bd5a35; text-decoration:underline;} 
+ table { 
+	width:800px; 
+	font-family:Arial, Helvetica, sans-serif;
+	color:#666;
+	font-size:12px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec; 
+	margin:0 auto; 
+	border:#ccc 1px solid; 
+ 	-moz-border-radius:3px; 
+	-webkit-border-radius:3px;
+	border-radius:3px; 
+  	-moz-box-shadow: 0 1px 2px #d1d1d1; 
+	-webkit-box-shadow: 0 1px 2px #d1d1d1;
+	box-shadow: 0 1px 2px #d1d1d1;
+} 
+ table th {
+	padding:3px 3px 2px 2px; 
+	border-top:1px solid #fafafa; 
+	border-bottom:1px solid #e0e0e0; 
+  	background: #ededed; 
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+	background: -moz-linear-gradient(top, #ededed, #ebebeb);
+} 
+ table th:first-child{
+	text-align: center;
+	padding-left:20px;
+}
+table tr:first-child th:first-child{ 
+	-moz-border-radius-topleft:3px; 
+	-webkit-border-top-left-radius:3px; 
+	border-top-left-radius:3px;
+} 
+ table tr:first-child th:last-child{ 
+	-moz-border-radius-topright:3px;
+	-webkit-border-top-right-radius:3px;
+	border-top-right-radius:3px;
+} 
+ table tr{
+	text-align: center;
+	padding-left:20px;
+}
+table tr td:first-child{ 
+	text-align: center;
+	padding-left:20px;
+	border-left: 0;
+	cursor:pointer;
+} 
+ table tr td {
+	padding:3px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 1px solid #e0e0e0; 
+	background: #fafafa;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+	background: -moz-linear-gradient(top, #fbfbfb, #fafafa);
+} 
+ table tr.even td{
+	background: #f6f6f6; 
+	background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+	background: -moz-linear-gradient(top, #f8f8f8, #f6f6f6);
+} 
+ table tr:last-child td{ 
+	border-bottom:0;
+} 
+ table tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:3px;
+	-webkit-border-bottom-left-radius:3px;
+	border-bottom-left-radius:3px;
+} 
+ table tr:last-child td:last-child{
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-bottom-right-radius:3px;
+} 
+ table tr:hover td{
+	background: #f2f2f2;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+	background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
+}
+
+#keywords thead {
+  cursor: pointer;
+  background: #c9dff0;
+}
+
+#keywords thead tr th.headerSortUp, #keywords thead tr th.headerSortDown {
+  background: #acc8dd;
+}
+
+footer {
+    text-align: center;
+    border-top: 2px solid silver;
+    margin-top: 1%;
+    padding: 0.5%;
+    color:#E6F3FB;
+    width: 99%;
+    float: left;
+    min-height: 20px;
+}
+
+footer, #page-wrap:after {height: 2%}
+
+/* Обертка прижать футер к низу */
+
+#page-wrap:after {
+    content: "";
+    display: block;
+    
+}
+
+#page-wrap {
+     
+    width: 100%;
+    min-height: 98%;
+    margin-bottom: -2.5%;
+    background-color: #fff; 
+    box-shadow: 10px 100px 150px 0px rgba(0,0,0,0.15)
+    
+    
+}
+
+
+/* Стили для ссылок */
+a { 
+    color:#a7a7a7;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color:#0D2699 ;
+    text-decoration: none;
+
+}
+
+a:active {color:#8ce4a6}
+
+/* Selection block При выделении */
+
+::selection {background:#8b9ff5; color:#fff}
+::-moz-selection {background:#8b9ff5; color:#fff}
+
+
+.left {float:left}
+.right {float:right; margin-right: 10px;}
+.clear {clear: both}
+
+/* стили для контент */
+
+#content {
+    text-align: center;
+    width: 98%;
+    margin-top: 2%;
+    float: left;
+    margin-left: 1%;
+    min-height: 100%;
+    box-sizing: border-box;
+    word-break: break-all;
+    font-size: 14px;
+    margin-bottom: 1%;
+    padding: 1%;   
+    position: relative;
+
+}
+#content table {
+    width:100%; 
+    font-family:sans-serif;
+}
+#content table td, th {
+    border-bottom: 1px solid #ccc;
+}
+
+#content table tr:hover td{
+  color: #4682B4;
+}
+
+
+#loadImg {
+	height:200px;
+	z-index:1000;
+	display:none;
+}
+
+
+#loadImg_modal {
+	height:100px;
+	width:200px; 
+	z-index:6;
+	display:none;
+	position:fixed;
+	top:45%;
+	left:50%;
+	margin-top: -50px;
+	margin-left: -100px;
+
+}
+
+/* Модальное окно данные через ajax */
+#modal_form {
+	width: 300px; 
+	border-radius: 5px;
+	border: 3px #000 solid;
+	background: #fff;
+	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	left: 50%; /* пoлoвинa экрaнa слевa */
+	margin-top: -150px;
+	margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+	z-index: 7; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+	padding: 20px 10px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+	z-index:6; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	background-color:#000; /* чернaя */
+	opacity:0.8; /* нo немнoгo прoзрaчнa */
+	-moz-opacity:0.8; /* фикс прозрачности для старых браузеров */
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; /* рaзмерoм вo весь экрaн */
+	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left:0;
+	cursor:pointer;
+	display:none; /* в oбычнoм сoстoянии её нет) */
+}
+#wrapper {
+    margin-top: 15px;
+}

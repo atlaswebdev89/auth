@@ -1,0 +1,13 @@
+{
+    "name": "byfly/byflytesting",
+    "require": {
+        "mrrio/shellwrap": "^0.4.1" 
+    },
+    "authors": [
+        {
+            "name": "Atlas dallas",
+            "email": "doroshuk33@yandex.ru"
+        }
+    ]
+}  
+ 
